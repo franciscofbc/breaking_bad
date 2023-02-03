@@ -1,5 +1,9 @@
-$bgColor: rgb(44, 17, 17);
+@use "variaveis";
 
-body {
-    background-color: $bgColor;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+
 }
