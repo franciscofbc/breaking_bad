@@ -1,0 +1,15 @@
+@use "variaveis";
+
+.about-course {
+    background-color: variaveis.$corPrincipalClara;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    div {}
+
+    img {
+        max-width: 100px;
+        border-radius: 8px;
+
+    }
+}
