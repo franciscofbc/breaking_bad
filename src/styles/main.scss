@@ -1,9 +1,22 @@
 @use "variaveis";
+@use "header";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;
 
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-yello {
+    color: variaveis.$corPrincipal;
 }

@@ -1,0 +1,66 @@
+@use "variaveis";
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+
+    background-color: variaveis.$corPrincipal;
+
+    &__content {
+        text-align: center;
+        width: 320px;
+
+        h3 {
+            text-transform: uppercase;
+            margin-top: 8px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        &__form_cadastro {
+
+            &__nome {
+                width: 320px;
+                margin-bottom: 8px;
+                padding: 8px;
+                background-color: rgba(#000, .2);
+                border-radius: 8px;
+                border: none;
+            }
+
+            &__email {
+                width: 320px;
+                margin-bottom: 8px;
+                padding: 8px;
+                background-color: rgba(#000, .2);
+                border-radius: 8px;
+                border: none;
+            }
+
+            &__cadastrar {
+                background-color: variaveis.$corPrincipal;
+                color: variaveis.$corSecundaria;
+                border-radius: 8px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                width: 320px;
+                padding: 16px;
+            }
+
+        }
+    }
+}
