@@ -1,7 +1,6 @@
 {
   "name": "breaking_bad",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "gulp",
@@ -16,5 +15,14 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.58.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscofbc/breaking_bad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/franciscofbc/breaking_bad/issues"
+  },
+  "homepage": "https://github.com/franciscofbc/breaking_bad#readme",
+  "description": ""
 }

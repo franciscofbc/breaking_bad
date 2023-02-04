@@ -1,15 +1,33 @@
 @use "variaveis";
 
 .about-course {
-    background-color: variaveis.$corPrincipalClara;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    // background-color: variaveis.$corPrincipalClara;
+background-color: #f6e58d;
 
-    div {}
+    h2 {
+        text-align: center;
+        // text-transform: uppercase;
+        padding: 32px;
 
-    img {
-        max-width: 100px;
-        border-radius: 8px;
 
     }
+
+    div {
+        text-align: center;
+
+        ul {
+
+            display: flex;
+            list-style: none;
+
+            img {
+                max-width: 180px;
+                border-radius: 8px;
+
+            }
+        }
+    }
+
+
+
 }

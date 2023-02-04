@@ -1,6 +1,7 @@
 @use "variaveis";
 @use "header";
 @use "about-course";
+@use "about-me";
 
 * {
     margin: 0;
@@ -12,6 +13,7 @@
     margin: 0 auto;
 
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    // background-image: url(../../dist/images/fundo2.png);
 }
 
 .text-white {

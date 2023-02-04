@@ -1,18 +1,39 @@
 @use "variaveis";
 
+@mixin inputText() {
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 16px;
+    background-color: rgba(#000, 15%);
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+
+    &::placeholder {
+        color: #000;
+        font-size: 16px;
+    }
+
+}
+
+
+
+@mixin title() {}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    align-items: center;
+    // gap: 24px;
+    // align-items: center;
+    background-image: url(../../dist/images/face3.png);
+    background-size: cover;
 
-    background-color: variaveis.$corPrincipal;
 
     &__content {
         text-align: center;
         width: 320px;
 
-        h3 {
+        h2 {
             text-transform: uppercase;
             margin-top: 8px;
         }
@@ -25,40 +46,40 @@
         p {
             margin-top: 8px;
             margin-bottom: 8px;
+            font-size: 18px;
         }
 
         &__form_cadastro {
 
             &__nome {
-                width: 320px;
-                margin-bottom: 8px;
-                padding: 8px;
-                background-color: rgba(#000, .2);
-                border-radius: 8px;
-                border: none;
+                @include inputText();
+
+
             }
 
             &__email {
-                width: 320px;
-                margin-bottom: 8px;
-                padding: 8px;
-                background-color: rgba(#000, .2);
-                border-radius: 8px;
-                border: none;
+                @include inputText();
             }
 
             &__cadastrar {
-                background-color: variaveis.$corPrincipal;
+                background-color: transparent;
                 color: variaveis.$corSecundaria;
                 border-radius: 8px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
-
+                border-color: variaveis.$corSecundaria;
                 font-size: 20px;
                 font-weight: bold;
                 cursor: pointer;
                 width: 320px;
                 padding: 16px;
+                margin-bottom: 16px;
+
+                &:hover {
+                    // background-color: scale-color(variaveis.$corSecundaria, $lightness: 55%);
+                    background-color: variaveis.$corSecundaria;
+                    color: variaveis.$corPrincipal;
+                }
             }
 
         }
