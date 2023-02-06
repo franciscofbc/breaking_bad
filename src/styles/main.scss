@@ -8,19 +8,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
-    // background-image: url(../../dist/images/fundo2.png);
 }
 
 .text-white {
     color: #fff;
 }
 
-.text-yello {
+.text-yellow {
     color: variaveis.$corPrincipal;
+}
+
+button {
+    background-color: variaveis.$corPrincipal;
+    color: variaveis.$corSecundaria;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 320px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    &:hover {
+        background-color: variaveis.$corSecundaria;
+        color: variaveis.$corPrincipal;
+    }
 }

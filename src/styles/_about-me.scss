@@ -3,16 +3,14 @@
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     padding-top: 50px;
     padding-bottom: 50px;
 
     &__content {
-        // text-align: center;
         width: 320px;
 
         h2 {
-
+            padding-bottom: 32px;
             margin-top: 8px;
         }
 
