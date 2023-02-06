@@ -2,7 +2,12 @@
 
 .about-course {
     // background-color: variaveis.$corPrincipalClara;
-background-color: #f6e58d;
+    // background-color: #f6e58d;
+    background-image: url(../../dist/images/fundo2.png);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 
     h2 {
         text-align: center;
@@ -25,9 +30,31 @@ background-color: #f6e58d;
                 border-radius: 8px;
 
             }
+
         }
+
+        button {
+            background-color: variaveis.$corPrincipal;
+            color: variaveis.$corSecundaria;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            // border-color: variaveis.$corSecundaria;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 320px;
+            padding: 16px;
+            margin-bottom: 16px;
+            margin-top: 16px;
+
+            &:hover {
+                // background-color: scale-color(variaveis.$corSecundaria, $lightness: 55%);
+                background-color: variaveis.$corSecundaria;
+                color: variaveis.$corPrincipal;
+            }
+        }
+
     }
-
-
-
 }

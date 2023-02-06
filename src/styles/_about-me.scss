@@ -1,9 +1,25 @@
 .about-me {
-    // background-image: url(../../dist/images/face1.png);
+    background-image: url(../../dist/images/face7.png);
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #f6e58d;
- 
 
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__content {
+        // text-align: center;
+        width: 320px;
+
+        h2 {
+
+            margin-top: 8px;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+    }
 }

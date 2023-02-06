@@ -1,0 +1,79 @@
+@use "variaveis";
+
+.comments {
+
+    background-image: url(../../dist/images/fundo2.png);
+    background-size: cover;
+    padding-bottom: 32px;
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+    h2 {
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    ul {
+        width: 80%;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+
+    li {
+        background-color: rgba(#fff, 50%);
+        border-radius: 8px;
+        padding: 16px;
+
+    }
+
+    &__comment { 
+        text-align: left;
+
+        &__superior {
+            display: flex;
+            align-items: center;
+
+
+            img {
+                max-width: 80px;
+                border-radius: 50%;
+
+            }
+
+            div {
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+
+    button {
+        background-color: variaveis.$corPrincipal;
+        color: variaveis.$corSecundaria;
+        border-radius: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        // border-color: variaveis.$corSecundaria;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 320px;
+        padding: 16px;
+        margin-bottom: 16px;
+        margin-top: 48px;
+
+
+        &:hover {
+            // background-color: scale-color(variaveis.$corSecundaria, $lightness: 55%);
+            background-color: variaveis.$corSecundaria;
+            color: variaveis.$corPrincipal;
+        }
+    }
+}
